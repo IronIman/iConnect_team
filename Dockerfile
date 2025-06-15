@@ -17,4 +17,4 @@ RUN composer install --no-dev --optimize-autoloader \
     && php artisan view:cache
 
 EXPOSE 80
-CMD ["/start.sh"]
+CMD ["supervisord"]
