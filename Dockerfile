@@ -2,6 +2,8 @@ FROM webdevops/php-nginx:8.2
 
 WORKDIR /var/www/html
 
+COPY ..
+
 COPY docker/nginx/default.conf /opt/docker/etc/nginx/vhost.conf
 
 # Laravel config
