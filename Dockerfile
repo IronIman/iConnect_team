@@ -4,7 +4,7 @@ WORKDIR /var/www/html
 
 COPY . .
 
-#COPY docker/nginx/default.conf /opt/docker/etc/nginx/vhost.conf
+COPY docker/nginx/default.conf /opt/docker/etc/nginx/vhost.conf
 
 # Laravel config
 ENV APP_ENV production
