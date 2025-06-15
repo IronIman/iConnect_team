@@ -11,5 +11,5 @@ RUN composer install --no-dev --optimize-autoloader \
     && php artisan route:cache \
     && php artisan view:cache
 
-EXPOSE 5432
+EXPOSE 80
 CMD ["supervisord"]
